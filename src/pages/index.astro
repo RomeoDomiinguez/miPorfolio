@@ -1,0 +1,92 @@
+---
+import Disponible from '../components/Disponible.astro';
+import Layout from '../layouts/Layout.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import GitHub from '../components/icons/GitHub.astro';
+import SocialBoton from '../components/SocialBoton.astro';
+import Mail from '../components/icons/Mail.astro';
+import Experiencia from '../components/Experiencia.astro';
+import SectionCon from '../components/SectionCon.astro';
+import Job from '../components/icons/Job.astro';
+import Code from '../components/icons/Code.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Tecnologias from '../components/Tecnologias.astro';
+import Stack from '../components/icons/Stack.astro';
+import Formacion from '../components/Formacion.astro';
+import School from '../components/icons/School.astro';
+import CVBoton from '../components/CVBoton.astro';
+---
+
+<Layout 
+	title="Porfolio de Romeo Dominguez - Desarrollador web"
+	description="Descripcion a cambiar">
+	<main class="px-6">
+		<SectionCon class="py-44">
+			<h1 class="text-white text-2xl lg:text-5xl font-bold flex flew-row gap-x-5 pb-4">
+				Hey, soy Romeo
+			</h1>
+			<div class="flex items-center pb-4"><Disponible>Disponible para trabajar</Disponible></div>
+			<h2 class="text-xl opacity-80 text-pretty">
+				Motivado y entusiasta, busco oportunidades en una empresa innovadora. Poseo sólidos
+				<span class="text-purple-400">conocimientos en diseño y desarrollo web</span>, y me destaco por mi enfoque dedicado al 
+				aprendizaje continuo y al crecimiento en un entorno profesional.
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+					<SocialBoton href="https://www.linkedin.com/in/romeodominguezbocanegra/">
+							<LinkedIn class="w-6 h-6"/>
+					</SocialBoton>
+					<SocialBoton href="https://github.com/RomeoDomiinguez">
+							<GitHub class="w-6 h-6"/>
+					</SocialBoton>
+					<CVBoton />
+					<SocialBoton href="mailto:romeodominguezbocanegra@gmail.com">
+							<Mail class="w-6 h-6"/>
+							romeodominguezbocanegra@gmail.com
+				</SocialBoton>
+				
+			</nav>	
+		</SectionCon>
+		<div id="experiencia">
+			<br>
+		</div>
+		<SectionCon >
+			<h2 class="text-white	text-3xl font-bold pb-6 flex gap-x-3 items-center">
+				<Job class="size-6"/>
+				Experiencia Laboral
+			</h2>
+			<Experiencia />
+		</SectionCon>
+		<div id="proyectos">
+			<br>
+		</div>
+		<SectionCon  class="py-32">
+			<h2 class="text-white	text-3xl font-bold pb-6 flex gap-x-3 items-center">
+				<Code class="size-6"/>
+				Proyectos
+			</h2>
+			<Proyectos />
+		</SectionCon>
+		<div id="tecnologias">
+			<br>
+		</div>
+		<SectionCon  class="py-20">
+			<h2 class="text-white	text-3xl font-bold pb-6 flex gap-x-3 items-center">
+				<Stack class="size-6"/>
+				Tecnologías
+			</h2>
+			<Tecnologias />
+		</SectionCon>
+		<div id="formacion">
+			<br>
+		</div>
+		<SectionCon  class="pb-4 mt-0">
+			<h2 class="text-white	text-3xl font-bold pb-6 flex gap-x-3 items-center">
+				<School class="size-6"/>
+				Formación
+			</h2>
+			<Formacion />
+		</SectionCon>
+	</main>
+</Layout>
+
